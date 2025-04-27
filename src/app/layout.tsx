@@ -26,6 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={clsx('bg-black antialiased', inter.variable)}>
+      <head>
+      <script defer src="https://cloud.umami.is/script.js" data-website-id="9ea7fd99-079e-4418-a34f-f1596a58faff"></script>
+      </head>
       <body className="bg-black">{children}</body>
     </html>
   )
