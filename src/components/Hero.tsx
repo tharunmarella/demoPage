@@ -107,8 +107,8 @@ export function Hero() {
               Your Personal Assistant That Actually <span className="text-cyan-400">Does</span> Things
             </h1>
             <p className="mt-6 text-lg text-gray-300">
-              Tellora doesn't just understand you — it takes action. While other assistants stop at answers, 
-              Tellora makes calls, books appointments, and handles real tasks for you. It's the difference between 
+              Tellora doesn&apos;t just understand you — it takes action. While other assistants stop at answers, 
+              Tellora makes calls, books appointments, and handles real tasks for you. It&apos;s the difference between 
               having information and getting things done.
             </p>
             <div className="mt-10">

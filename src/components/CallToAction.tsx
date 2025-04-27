@@ -14,7 +14,7 @@ export function CallToAction() {
       <Container className="relative">
         <div className="mx-auto max-w-lg sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
-            Don't Miss Your Chance
+            Don&apos;t Miss Your Chance
           </h2>
           <p className="mt-4 text-lg text-gray-300">
             Spots on our waitlist are limited. Sign up now to be among the first to experience 

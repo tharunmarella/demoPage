@@ -3,6 +3,7 @@
 import { useId, useRef, useState } from 'react'
 import clsx from 'clsx'
 import { motion, useInView, useMotionValue } from 'framer-motion'
+import Image from 'next/image'
 
 import { AppScreen } from '@/components/AppScreen'
 
@@ -194,22 +195,22 @@ export function AppDemo() {
             </div>
             {/* Tellora searching */}
             <div className="flex items-start mb-1 relative z-10">
-              <img src="/pocket-ts/tellora-avatar.png" alt="T" className="w-5 h-5 rounded-full object-cover mr-2 mt-0.5 bg-gray-800 border border-cyan-400" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+              <Image src="/pocket-ts/tellora-avatar.png" alt="T" width={20} height={20} className="w-5 h-5 rounded-full object-cover mr-2 mt-0.5 bg-gray-800 border border-cyan-400" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               <div className="max-w-[70%] bg-cyan-100/30 text-cyan-50 rounded-2xl rounded-bl-md px-3 py-1.5 text-[15px] shadow-sm">
                 Sure! Let me find a nearby salon…
               </div>
             </div>
             {/* Tellora calling */}
             <div className="flex items-start mb-1 relative z-10">
-              <img src="/pocket-ts/tellora-avatar.png" alt="T" className="w-5 h-5 rounded-full object-cover mr-2 mt-0.5 bg-gray-800 border border-cyan-400" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+              <Image src="/pocket-ts/tellora-avatar.png" alt="T" width={20} height={20} className="w-5 h-5 rounded-full object-cover mr-2 mt-0.5 bg-gray-800 border border-cyan-400" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               <div className="max-w-[70%] bg-cyan-100/30 text-cyan-50 rounded-2xl rounded-bl-md px-3 py-1.5 text-[15px] shadow-sm flex items-center gap-2">
                 <svg className="w-4 h-4 text-cyan-200 animate-spin" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" /></svg>
-                Calling "Downtown Cuts" to check availability…
+                Calling &quot;Downtown Cuts&quot; to check availability…
               </div>
             </div>
             {/* Tellora found slot */}
             <div className="flex items-start mb-1 relative z-10">
-              <img src="/pocket-ts/tellora-avatar.png" alt="T" className="w-5 h-5 rounded-full object-cover mr-2 mt-0.5 bg-gray-800 border border-cyan-400" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+              <Image src="/pocket-ts/tellora-avatar.png" alt="T" width={20} height={20} className="w-5 h-5 rounded-full object-cover mr-2 mt-0.5 bg-gray-800 border border-cyan-400" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               <div className="max-w-[70%] bg-cyan-100/30 text-cyan-50 rounded-2xl rounded-bl-md px-3 py-1.5 text-[15px] shadow-sm">
                 They have a slot at <span className="font-semibold text-cyan-200">3:30pm</span>. Would you like to book it?
               </div>
@@ -222,7 +223,7 @@ export function AppDemo() {
             </div>
             {/* Tellora confirms booking */}
             <div className="flex items-start mb-1 relative z-10">
-              <img src="/pocket-ts/tellora-avatar.png" alt="T" className="w-5 h-5 rounded-full object-cover mr-2 mt-0.5 bg-gray-800 border border-cyan-400" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+              <Image src="/pocket-ts/tellora-avatar.png" alt="T" width={20} height={20} className="w-5 h-5 rounded-full object-cover mr-2 mt-0.5 bg-gray-800 border border-cyan-400" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               <div className="max-w-[70%] bg-cyan-100/30 text-cyan-50 rounded-2xl rounded-bl-md px-3 py-1.5 text-[15px] shadow-sm">
                 <span className="font-semibold text-cyan-200">Booked!</span> Your appointment at <span className="font-semibold text-cyan-200">Downtown Cuts</span> is set for <span className="font-semibold text-cyan-200">3:30pm</span>.
               </div>
